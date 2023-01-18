@@ -10,8 +10,6 @@ using UnityEngine;
 
 public class PlayerController : NetworkBehaviour
 {
-    [SerializeField] StrikeIndicator _strikeIndicator;
-
     private void Awake()
     {
         InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
